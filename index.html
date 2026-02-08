@@ -41,7 +41,10 @@
 
     // 2. Tentukan Filter Browser (Exambro atau CBT)
     // Catatan: Anda bisa menambah kata kunci sesuai nama aplikasi yang dipakai siswa
-    const isExambro = ua.includes("Exambro") || ua.includes("CBT") || ua.includes("Kiosk");
+    const isExambro = ua.includes("Exambro") || 
+                      ua.includes("CBT") || 
+                      ua.includes("Android") || 
+                      ua.includes("Kiosk");
 
     if (isExambro && code) {
         try {
@@ -59,4 +62,5 @@
 </script>
 
 </body>
+
 </html>
