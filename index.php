@@ -6,7 +6,7 @@
 
 // 1. Konfigurasi Link Soal (Base64 dari link Office Form Anda)
 // Contoh link yang sudah di-encode: aHR0cHM6Ly9mb3Jtcy5vZmZpY2UuY29tL3IvYWJjZGUxMjM=
-$encoded_link = isset($_GET['code']) ? $_GET['code'] : '';
+$encoded_link = isset($_GET['code']) ? $_GET['code'] : 'aHR0cHM6Ly9hbmdnYWZrLmdpdGh1Yi5pby9haWpza2Fuc2FraXMv';
 
 // 2. Ambil Identitas Browser (User-Agent)
 $ua = $_SERVER['HTTP_USER_AGENT'];
@@ -65,4 +65,5 @@ if ($is_valid_app && !empty($encoded_link)) {
 </div>
 
 </body>
+
 </html>
