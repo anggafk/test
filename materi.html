@@ -25,15 +25,23 @@
     line-height: 1.6;
   }
 
-  nav {
-    padding: 0 40px;
-    display: flex; align-items: center; justify-content: space-between;
-    height: 56px; position: sticky; top: 0; background: #002D72; z-index: 10;
+  /* SITE HEADER */
+  .site-header { background: #002D72; padding: 18px 40px 0; }
+  .site-header .inner { max-width: 860px; margin: 0 auto; padding-left: 40px; }
+  .site-header .brand {
+    display: inline-block; font-size: 20px; font-weight: 600;
+    color: #fff; text-decoration: none; letter-spacing: -.01em; margin-bottom: 14px;
   }
-  .nav-brand { font-size: 14px; font-weight: 600; color: #fff; text-decoration: none; }
+
+  nav {
+    background: #002D72;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .nav-inner { max-width: 860px; margin: 0 auto; display: flex; padding-left: 40px; }
   .nav-links { display: flex; list-style: none; }
   .nav-links a {
-    display: block; padding: 0 16px; height: 56px; line-height: 56px;
+    display: block; padding: 0 20px 0 0; height: 44px; line-height: 44px;
     font-size: 14px; color: rgba(255,255,255,0.7); text-decoration: none;
     border-bottom: 2px solid transparent; transition: color .15s, border-color .15s;
   }
@@ -41,14 +49,14 @@
   .nav-links a.active { color: #fff; font-weight: 500; border-bottom-color: #fff; }
 
   .page-header {
-    max-width: 720px; margin: 0 auto;
+    max-width: 860px; margin: 0 auto;
     padding: 52px 40px 36px;
     border-bottom: 1px solid #e8e8e8;
   }
   .page-header h1 { font-size: 26px; font-weight: 600; letter-spacing: -.02em; }
 
   /* GRUP MATERI */
-  .materi-wrap { max-width: 720px; margin: 0 auto; padding: 0 40px 80px; }
+  .materi-wrap { max-width: 860px; margin: 0 auto; padding: 0 40px 80px; }
 
   .grup {
     margin-top: 36px;
@@ -85,9 +93,9 @@
   .btn-text:hover { border-color: #002D72; color: #002D72; }
 
   /* FOOTER */
-  .divider { border: none; border-top: 1px solid #e8e8e8; max-width: 720px; margin: 0 auto; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; max-width: 860px; margin: 0 auto; }
   footer {
-    max-width: 720px; margin: 0 auto;
+    max-width: 860px; margin: 0 auto;
     padding: 28px 40px 48px;
     display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
   }
@@ -109,15 +117,21 @@
 </head>
 <body>
 
+<div class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Portal Belajar</a>
+  </div>
+</div>
 <nav>
-  <a class="nav-brand" href="index.html">Portal Belajar</a>
-  <ul class="nav-links">
+  <div class="nav-inner">
+    <ul class="nav-links">
     <li><a href="index.html">Beranda</a></li>
     <li><a href="materi.html" class="active">Materi</a></li>
     <li><a href="praktik.html">Praktik</a></li>
     <li><a href="nilai.html">Nilai</a></li>
     <li><a href="tugas.html">Tugas</a></li>
-  </ul>
+    </ul>
+  </div>
 </nav>
 
 <div class="page-header">
@@ -174,9 +188,9 @@ const data = [
     grup: "Pemasangan dan Konfigurasi Perangkat Jaringan",
     materi: [
       { judul: "Menghubungkan Router ke PC",    link: "materi-menghubungkan-router.html" },
-      { judul: "Konfigurasi Dasar Router",      link: "materi-konfigurasi-dasar-router.html" },
-      { judul: "Konfigurasi DHCP",              link: "materi-detail.html" },
-      { judul: "Konfigurasi Routing",           link: "materi-detail.html" },
+      { judul: "Konfigurasi Dasar Router",      link: "materi-konfigurasi-dasar.html" },
+      { judul: "Konfigurasi DHCP",              link: "materi-dhcp.html" },
+      { judul: "Konfigurasi Routing",           link: "materi-routing.html" },
       { judul: "Konfigurasi Wireless",          link: "materi-detail.html" },
       { judul: "Konfigurasi Hotspot",           link: "materi-detail.html" },
       { judul: "Konfigurasi Filter",            link: "materi-detail.html" },

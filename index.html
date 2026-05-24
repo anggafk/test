@@ -40,51 +40,50 @@
     line-height: 1.6;
   }
 
+  
+  /* SITE HEADER */
+  .site-header {
+    background: #002D72;
+    padding: 18px 40px 0;
+  }
+  .site-header .inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+  .site-header .brand {
+    display: inline-block;
+    font-size: 20px; font-weight: 600;
+    color: #fff; text-decoration: none;
+    letter-spacing: -.01em;
+    margin-bottom: 14px;
+  }
+
   /* NAV */
   nav {
-    border-bottom: none;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-    position: sticky;
-    top: 0;
     background: #002D72;
-    z-index: 10;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    position: sticky; top: 0; z-index: 10;
   }
-  .nav-brand {
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-  }
-  .nav-links {
+  .nav-inner {
+    max-width: 860px;
+    margin: 0 auto;
     display: flex;
-    gap: 0;
-    list-style: none;
+    padding-left: 40px;
   }
+  .nav-links { display: flex; list-style: none; }
   .nav-links a {
-    display: block;
-    padding: 0 16px;
-    height: 56px;
-    line-height: 56px;
-    font-size: 14px;
-    color: rgba(255,255,255,0.7);
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: color .15s, border-color .15s;
+    display: block; padding: 0 20px 0 0; height: 44px; line-height: 44px;
+    font-size: 14px; color: rgba(255,255,255,0.7); text-decoration: none;
+    border-bottom: 2px solid transparent; transition: color .15s, border-color .15s;
   }
   .nav-links a:hover { color: #fff; }
-  .nav-links a.active {
-    color: #fff;
-    font-weight: 500;
-    border-bottom-color: #fff;
-  }
+  .nav-links a.active { color: #fff; font-weight: 500; border-bottom-color: #fff; }
+
 
   /* HERO */
   .hero {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 80px 40px 64px;
   }
@@ -135,7 +134,7 @@
 
   /* MENU GRID */
   .menu {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 0 40px 80px;
   }
@@ -181,7 +180,7 @@
 
   /* DIVIDER */
   .divider {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto 40px;
     padding: 0 40px;
     border: none;
@@ -190,7 +189,7 @@
 
   /* TUJUAN PEMBELAJARAN */
   .tujuan {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 0 40px 8px;
   }
@@ -222,7 +221,7 @@
 
 
   .info-strip {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 0 40px 64px;
     display: flex;
@@ -244,7 +243,7 @@
 
   /* QR CODE */
   .qr-wrap {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 0 40px 8px;
   }
@@ -276,7 +275,7 @@
 
   /* FOOTER */
   footer {
-    max-width: 680px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 28px 40px 48px;
     display: flex;
@@ -321,15 +320,21 @@
 </head>
 <body>
 
+<div class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Portal Belajar</a>
+  </div>
+</div>
 <nav>
-  <a class="nav-brand" href="index.html">Portal Belajar</a>
-  <ul class="nav-links">
+  <div class="nav-inner">
+    <ul class="nav-links">
     <li><a href="index.html" class="active">Beranda</a></li>
     <li><a href="materi.html">Materi</a></li>
     <li><a href="praktik.html">Praktik</a></li>
     <li><a href="nilai.html">Nilai</a></li>
     <li><a href="tugas.html">Tugas</a></li>
-  </ul>
+    </ul>
+  </div>
 </nav>
 
 <section class="hero">
