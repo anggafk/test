@@ -227,7 +227,7 @@
     <li><div class="step-n">b</div><div class="step-body">Klik tombol <strong>+</strong> untuk menambah alamat IP.</div></li>
     <li><div class="step-n">c</div><div class="step-body">
       Isikan sesuai ketentuan berikut:<br>
-      IP Address: <code>[Alamat IP]/[Prefix]</code><br>
+      IP Address: <code>[Alamat IP]</code><br>
       Network: <code>[Alamat Network]</code><br>
       Interface: <code>[Port yang dipakai]</code>
     </div></li>
@@ -248,10 +248,8 @@ Interface: ether1</pre>
     <li><div class="step-n">e</div><div class="step-body">Klik tombol <strong>Apply</strong> → <strong>OK</strong>.</div></li>
   </ol>
   <pre>Contoh IP DNS:
-Google DNS     : 8.8.8.8
-                 8.8.4.4
-Cloudflare DNS : 1.1.1.1
-                 1.0.0.1</pre>
+Google DNS     : 8.8.8.8 / 8.8.4.4
+Cloudflare DNS : 1.1.1.1 / 1.0.0.1</pre>
   <div class="callout info">
     💡 <strong>Menggunakan IP Gateway sebagai DNS</strong><br>
     Jika jaringan sudah menyediakan DNS Server (misalnya dari ISP), kamu bisa menggunakan <strong>IP Gateway</strong> sebagai DNS Server. Caranya isikan alamat IP Gateway di kolom Servers. Dengan begitu, permintaan DNS dari Router akan diteruskan ke DNS milik ISP secara otomatis.
@@ -264,11 +262,8 @@ Cloudflare DNS : 1.1.1.1
     <li><div class="step-n">b</div><div class="step-body">Klik tombol <strong>+</strong> untuk menambah NAT.</div></li>
     <li><div class="step-n">c</div><div class="step-body">
       Atur sesuai ketentuan berikut:<br>
-      Tab General<br>
-      — Chain: <code>srcnat</code><br>
-      — Out. Interface: <code>[port yang digunakan]</code><br>
-      Tab Action<br>
-      — Action: <code>masquerade</code>
+      Tab General — Chain: <code>srcnat</code>, Out. Interface: <code>[port yang digunakan]</code><br>
+      Tab Action — Action: <code>masquerade</code>
     </div></li>
     <li><div class="step-n">d</div><div class="step-body">Klik tombol <strong>Apply</strong> → <strong>OK</strong>.</div></li>
   </ol>
