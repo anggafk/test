@@ -101,7 +101,6 @@
     letter-spacing: -.02em;
     margin-bottom: 16px;
     color: #111;
-    white-space: nowrap;
   }
   .hero p {
     font-size: 16px;
@@ -309,10 +308,12 @@
   }
 
   @media (max-width: 600px) {
-    .hero, .menu, .info-strip { padding-left: 20px; padding-right: 20px; }
-    .divider { padding: 0 20px; }
-    .menu-grid { grid-template-columns: 1fr; }
-    .nav-links a { padding: 0 10px; font-size: 13px; }
+    .site-header { padding: 14px 16px 0; }
+    .site-header .inner, .nav-inner { padding-left: 0; }
+    .hero, .tujuan, .qr-wrap, footer { padding-left: 20px; padding-right: 20px; }
+    .divider { margin-left: 20px; margin-right: 20px; }
+    .hero h1 { font-size: 22px; }
+    .nav-links a { padding: 0 10px 0 0; font-size: 13px; }
   }
 </style>
 </head>
