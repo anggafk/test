@@ -60,7 +60,12 @@
     flex-shrink: 0;
   }
   .slide-header > svg { width: 2.2em; height: 2.2em; flex-shrink: 0; }
-  .slide-header h2 { font-size: 2.1em; font-weight: 700; line-height: 1.1; }
+  .slide-header h2 {
+    font-size: 2.1em; font-weight: 900; line-height: 1.1;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0,0,0,.5);
+    letter-spacing: .01em;
+  }
 
   .hdr-blue   { background: var(--navy); }
   .hdr-green  { background: var(--green); }
@@ -106,11 +111,17 @@
     width: 3.6em; height: 3.6em; margin-bottom: .6em;
   }
   .s1-title {
-    font-size: 3em; font-weight: 800; color: var(--white); line-height:1.1;
+    font-size: 3em; font-weight: 900; color: #ffffff; line-height:1.1;
     margin-bottom:.35em;
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
+    letter-spacing: .01em;
   }
-  .s1-school { font-size: 1.25em; color: #b0c4e8; margin-bottom:.3em; }
-  .s1-url    { font-size: 1em;   color: #7fa0d8; font-style:italic; }
+  .s1-school {
+    font-size: 1.25em; color: #ffffff; margin-bottom:.3em;
+    font-weight: 800;
+    text-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+  .s1-url    { font-size: 1em; color: #c8dcf8; font-style:italic; font-weight: 700; }
   .s1-right {
     width: 22%;
     display: flex; flex-direction: column; justify-content: center;
@@ -118,11 +129,14 @@
     position: relative; z-index: 1;
   }
   .s1-menu-item {
-    display: flex; align-items: center; gap:.6em; color:#c8d8ef; font-size:.95em;
+    display: flex; align-items: center; gap:.6em;
+    color: #ffffff; font-size:.95em;
+    font-weight: 800;
+    text-shadow: 0 1px 3px rgba(0,0,0,.35);
   }
   .s1-dot {
     width:1em; height:1em; border-radius:50%;
-    background: rgba(255,255,255,.25); flex-shrink:0;
+    background: rgba(255,255,255,.35); flex-shrink:0;
   }
 
   /* ─────────────── SLIDE 2 ─────────────── */
@@ -136,7 +150,8 @@
     width: 3em; flex-shrink:0;
     background: var(--navy);
     display: flex; align-items:center; justify-content:center;
-    font-size: 2.4em; font-weight: 800; color: var(--white);
+    font-size: 2.4em; font-weight: 900; color: #ffffff;
+    text-shadow: 0 1px 4px rgba(0,0,0,.4);
   }
   .step-content {
     padding:.9em 1.1em; flex:1;
@@ -158,9 +173,10 @@
   .step-num-circle {
     width:2.4em; height:2.4em; border-radius:50%;
     background: var(--green);
-    color:var(--white); font-weight:700; font-size:1.3em;
+    color:#ffffff; font-weight:800; font-size:1.3em;
     display:inline-flex; align-items:center; justify-content:center;
     flex-shrink:0; align-self:flex-start;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
   }
   .step-card3 h3 { font-size:1.2em; font-weight:700; color:var(--text); margin:0; }
   .step-card3 p  { font-size:1.05em; color:var(--muted); line-height:1.45; margin:0; }
@@ -186,9 +202,10 @@
     display:flex; flex-direction:column;
   }
   .step-card4-top {
-    background:var(--orange); color:var(--white);
-    font-size:1.7em; font-weight:800;
+    background:var(--orange); color:#ffffff;
+    font-size:1.7em; font-weight:900;
     text-align:center; padding:.45em;
+    text-shadow: 0 1px 4px rgba(0,0,0,.35);
   }
   .step-card4-body {
     padding:.9em 1em; flex:1;
@@ -206,7 +223,9 @@
   }
   .time-card-header {
     padding:.75em; text-align:center;
-    font-size:2em; font-weight:800; color:var(--white);
+    font-size:2em; font-weight:900; color:#ffffff;
+    text-shadow: 0 2px 6px rgba(0,0,0,.4);
+    letter-spacing: .02em;
   }
   .tc-green  { background:var(--green); }
   .tc-orange { background:var(--orange); }
@@ -230,11 +249,21 @@
     justify-content:center; padding:1.2em 1.8em; gap:.4em;
     min-width: 12em;
   }
-  .s6-left svg { width:4em; height:4em; color:var(--white); margin-bottom:.3em; }
-  .s6-left h3 { color:var(--white); font-size:1.1em; font-weight:700; text-align:center; }
-  .s6-left .s6-sub { color:#a0b8d8; font-size:.82em; text-align:center; }
-  .s6-left .s6-time { color:var(--white); font-size:2.4em; font-weight:800; margin:.1em 0; }
-  .s6-left .s6-note { color:#b0c4e0; font-size:.72em; text-align:center; font-style:italic; }
+  .s6-left svg { width:4em; height:4em; color:#ffffff; margin-bottom:.3em; }
+  .s6-left h3 {
+    color:#ffffff; font-size:1.1em; font-weight:900; text-align:center;
+    text-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+  .s6-left .s6-sub {
+    color:#ffffff; font-size:.82em; text-align:center; font-weight: 800;
+  }
+  .s6-left .s6-time {
+    color:#ffffff; font-size:2.4em; font-weight:900; margin:.1em 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
+  }
+  .s6-left .s6-note {
+    color:#ddeeff; font-size:.72em; text-align:center; font-style:italic; font-weight: 700;
+  }
   .s6-steps { display:flex; flex-direction:column; gap:.6em; justify-content:stretch; height:100%; }
   .s6-step {
     display:flex; align-items:center; gap:.9em;
@@ -243,9 +272,10 @@
   }
   .s6-num {
     width:2.6em; height:2.6em; border-radius:50%;
-    background:var(--navy); color:var(--white);
-    font-weight:700; font-size:1.3em;
+    background:var(--navy); color:#ffffff;
+    font-weight:800; font-size:1.3em;
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
   }
   .s6-step p { font-size:1.3em; color:var(--text); line-height:1.4; }
 
@@ -261,7 +291,7 @@
     width:4em; height:4em; border-radius:50%;
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
-  .info-icon svg { width:2em; height:2em; color:var(--white); }
+  .info-icon svg { width:2em; height:2em; color:#ffffff; }
   .ic-green  { background:var(--green); }
   .ic-navy   { background:var(--navy); }
   .ic-red    { background:#c0392b; }
@@ -291,16 +321,20 @@
     position:relative; z-index:1;
   }
   .s8-icon { width:5.5em; height:5.5em; flex-shrink:0; }
-  #s8 h2 { font-size:3.2em; font-weight:800; color:var(--white); line-height:1; }
-  .s8-sub  { font-size:1.3em; color:#a0b8d8; margin-top:.3em; }
-  .s8-school { font-size:1.1em; color:#5070a0; text-align:center; margin-top:.3em; position:relative; z-index:1; }
-
-  .s8-cards {
-    display:flex; flex-direction:column; gap:.3em;
-    position:relative; z-index:1; flex:1;
-    justify-content:center;
+  #s8 h2 {
+    font-size:3.2em; font-weight:900; color:#ffffff; line-height:1;
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
   }
-  /* ── Slide 8 layout ── */
+  .s8-sub  {
+    font-size:1.3em; color:#ffffff; margin-top:.3em;
+    font-weight: 800;
+    text-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+  .s8-school {
+    font-size:1.1em; color:#a0bce0; text-align:center; margin-top:.3em;
+    position:relative; z-index:1; font-weight: 700;
+  }
+
   .s8-cards {
     flex:1; display:flex; flex-direction:column;
     gap:.6em; min-height:0;
@@ -308,7 +342,7 @@
   .s8-card {
     flex:1; display:flex; flex-direction:row;
     gap:0; min-height:0;
-    border-bottom:1px solid rgba(255,255,255,.12);
+    border-bottom:1px solid rgba(255,255,255,.18);
   }
   .s8-card:last-child { border-bottom:none; }
 
@@ -317,20 +351,28 @@
     flex:1; display:flex; flex-direction:column;
     justify-content:center; gap:.4em;
     padding-right:2em;
-    border-right:1px solid rgba(255,255,255,.15);
+    border-right:1px solid rgba(255,255,255,.2);
   }
   .s8-kiri-title {
-    font-size:1.6em; font-weight:700; color:#fff;
+    font-size:1.6em; font-weight:800; color:#ffffff;
     display:flex; align-items:center; gap:.4em;
+    text-shadow: 0 1px 4px rgba(0,0,0,.3);
   }
   .s8-kiri-title svg { width:1em; height:1em; }
-  .s8-kiri-sub { font-size:1em; color:#8090b8; margin-bottom:.2em; }
+  .s8-kiri-sub {
+    font-size:1em; color:#c0d4f0; margin-bottom:.2em;
+    font-weight: 800;
+  }
   .s8-format { display:flex; flex-direction:column; gap:.25em; }
   .s8-fmt-row { display:flex; align-items:baseline; gap:1em; }
-  .s8-fmt-label { font-size:.95em; color:#6080a8; min-width:7em; flex-shrink:0; }
+  .s8-fmt-label {
+    font-size:.95em; color:#a8c4e8; min-width:7em; flex-shrink:0; font-weight: 700;
+  }
   .s8-fmt-code {
-    font-size:1.3em; color:#c0d8f0;
+    font-size:1.3em; color:#ffffff;
     font-family:'Courier New', monospace; letter-spacing:.02em;
+    font-weight: 900;
+    text-shadow: 0 1px 4px rgba(0,0,0,.4);
   }
 
   /* kolom kanan: contoh besar */
@@ -339,13 +381,17 @@
     align-items:center; justify-content:center;
     padding-left:2em; gap:.3em;
   }
-  .s8-contoh-label { font-size:.9em; color:#6080a8; text-transform:uppercase; letter-spacing:.1em; }
+  .s8-contoh-label {
+    font-size:.9em; color:#a8c4e8; text-transform:uppercase;
+    letter-spacing:.1em; font-weight: 800;
+  }
   .s8-contoh-val {
-    font-size:2.6em; font-weight:700; color:#fff;
+    font-size:2.6em; font-weight:800; color:#ffffff;
     font-family:'Courier New', monospace; letter-spacing:.03em;
     text-align:center;
+    text-shadow: 0 2px 8px rgba(0,0,0,.4);
   }
-  .s8-nis { color:#FFF212; }
+  .s8-nis { color:#FFF212; text-shadow: 0 1px 6px rgba(200,180,0,.5); }
 
   /* ─────────────── NAV (inline in header) ─────────────── */
   .nav-inline {
@@ -355,20 +401,20 @@
   }
   .nav-btn {
     display:flex; align-items:center; justify-content:center;
-    background: rgba(255,255,255,.15);
+    background: rgba(255,255,255,.2);
     border: none;
     color: #fff; cursor:pointer; border-radius:50%;
     width:1.8em; height:1.8em;
     transition: background .18s;
   }
-  .nav-btn:hover { background: rgba(255,255,255,.32); }
+  .nav-btn:hover { background: rgba(255,255,255,.38); }
   .nav-btn svg { width:1.1em; height:1.1em; display:block; }
   .nav-btn.home-btn { border-radius:.35em; width:auto; padding:0 .55em; gap:.3em; font-size:.85em; font-weight:600; }
-  #slide-counter { color: rgba(255,255,255,.75); font-size:.8em; font-weight:600; margin: 0 .2em; }
+  #slide-counter { color: rgba(255,255,255,.85); font-size:.8em; font-weight:700; margin: 0 .2em; }
   .nav-dots { display:flex; gap:.35em; align-items:center; }
   .nav-dot {
     width:.45em; height:.45em; border-radius:50%;
-    background: rgba(255,255,255,.35); cursor:pointer; transition:background .15s;
+    background: rgba(255,255,255,.4); cursor:pointer; transition:background .15s;
   }
   .nav-dot.active { background: #fff; }
 
@@ -396,7 +442,6 @@
     <div class="s1-circle c3"></div>
     <div class="s1-circle c4"></div>
     <div class="s1-left">
-      <!-- calendar-check icon -->
       <svg class="s1-icon" viewBox="0 0 64 64" fill="none">
         <rect x="4" y="12" width="56" height="48" rx="5" fill="white"/>
         <rect x="4" y="12" width="56" height="16" rx="5" fill="white"/>
@@ -672,7 +717,6 @@
     <div class="slide-body">
       <div class="s6-body">
         <div class="s6-left">
-          <!-- bell icon -->
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
             <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
@@ -866,89 +910,19 @@
 
 </div><!-- #deck -->
 
-<script type="module">
-  // ── Firebase config ──────────────────────────────────────────────
-  // Ganti nilai di bawah dengan config Firebase project kamu
-  // Buat project di: https://console.firebase.google.com
-  // Pilih Realtime Database → buat database → salin config
-  const FIREBASE_URL = 'https://NAMA-PROJECT-default-rtdb.firebaseio.com';
-  const SLIDE_PATH   = '/presensi-pkl/slide.json';
-
-  // ── State ────────────────────────────────────────────────────────
+<script>
   const total = 8;
   let cur = 1;
-  let isPresenter = false; // true = bisa kontrol slide orang lain
 
-  // ── Tombol Presenter Mode (klik 3x logo untuk jadi presenter) ──
-  let clickCount = 0;
-  document.getElementById('s1').addEventListener('click', e => {
-    if (!e.target.closest('.nav-btn')) {
-      clickCount++;
-      if (clickCount >= 3) {
-        clickCount = 0;
-        isPresenter = !isPresenter;
-        showStatus(isPresenter ? '🎤 Mode Presenter aktif' : '👁 Mode Penonton');
-      }
-    }
-  });
-
-  // ── Status toast ─────────────────────────────────────────────────
-  const toast = document.createElement('div');
-  toast.style.cssText = 'position:fixed;bottom:1em;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.75);color:#fff;padding:.4em 1.2em;border-radius:2em;font-size:.85em;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999;font-family:Segoe UI,sans-serif';
-  document.body.appendChild(toast);
-  let toastTimer;
-  function showStatus(msg) {
-    toast.textContent = msg;
-    toast.style.opacity = 1;
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.style.opacity = 0, 2500);
-  }
-
-  // ── Dots builder ─────────────────────────────────────────────────
-  function buildDots() {
-    document.querySelectorAll('.nav-dots').forEach(el => {
-      el.innerHTML = '';
-      for (let i = 1; i <= total; i++) {
-        const d = document.createElement('div');
-        d.className = 'nav-dot' + (i === cur ? ' active' : '');
-        d.onclick = () => navigate(i);
-        el.appendChild(d);
-      }
-    });
-  }
-  buildDots();
-
-  // ── Render slide lokal ───────────────────────────────────────────
   function renderSlide(n) {
     document.getElementById('s' + cur).classList.remove('active');
     cur = n;
     document.getElementById('s' + cur).classList.add('active');
-    document.querySelectorAll('.nav-dots').forEach(el => {
-      Array.from(el.children).forEach((d, i) => {
-        d.classList.toggle('active', i + 1 === cur);
-      });
-    });
   }
 
-  // ── Navigasi: kirim ke Firebase jika presenter, lokal jika penonton ──
-  async function navigate(n) {
+  function navigate(n) {
     n = Math.max(1, Math.min(total, n));
-    if (isPresenter) {
-      try {
-        await fetch(FIREBASE_URL + SLIDE_PATH, {
-          method: 'PUT',
-          body: JSON.stringify(n),
-          headers: { 'Content-Type': 'application/json' }
-        });
-        // renderSlide dipanggil oleh listener Firebase
-      } catch {
-        renderSlide(n); // fallback offline
-        showStatus('⚠ Offline — tidak tersinkron');
-      }
-    } else {
-      renderSlide(n);
-      showStatus('👁 Mode Penonton — tidak tersinkron ke perangkat lain');
-    }
+    renderSlide(n);
   }
 
   function next() { navigate(cur < total ? cur + 1 : 1); }
@@ -957,37 +931,10 @@
   window.next = next;
   window.prev = prev;
 
-  // ── Firebase Realtime listener (Server-Sent Events) ───────────────
-  function startSync() {
-    const es = new EventSource(FIREBASE_URL + SLIDE_PATH + '?alt=sse');
-    es.addEventListener('put', e => {
-      const data = JSON.parse(e.data);
-      const n = parseInt(data.data);
-      if (n >= 1 && n <= total && n !== cur) {
-        renderSlide(n);
-      }
-    });
-    es.onerror = () => {
-      showStatus('⚠ Koneksi Firebase terputus, mencoba ulang…');
-    };
-  }
-
-  // Cek apakah Firebase URL sudah dikonfigurasi
-  if (FIREBASE_URL.includes('NAMA-PROJECT')) {
-    showStatus('ℹ️ Sinkronisasi nonaktif — Firebase belum dikonfigurasi');
-  } else {
-    startSync();
-  }
-
-  // ── Keyboard & Swipe ─────────────────────────────────────────────
   document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next();
     if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   prev();
     if (e.key === 'Home') navigate(1);
-    if (e.key === 'p' || e.key === 'P') {
-      isPresenter = !isPresenter;
-      showStatus(isPresenter ? '🎤 Mode Presenter aktif' : '👁 Mode Penonton');
-    }
   });
 
   let tx = 0;
